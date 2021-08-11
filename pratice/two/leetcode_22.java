@@ -1,6 +1,5 @@
 package pratice.two;
 
-import leetcode.ListNode1.ListNode;
 
 public class leetcode_22 {
     public ListNode getKthFromEnd(ListNode head, int k) {

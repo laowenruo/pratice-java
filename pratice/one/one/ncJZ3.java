@@ -1,6 +1,5 @@
 package pratice.one.one;
 
-import leetcode.ListNode1.数据结构.ListNode;
 
 import java.util.ArrayList;
 
