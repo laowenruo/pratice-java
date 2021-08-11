@@ -25,7 +25,6 @@ public class Coutdownlatch_test {
             latch.countDown();
         }
     }
-
     public static void main(String[] args) {
         CountDownLatch latch = new CountDownLatch(3);
         ExecutorService executorService = Executors.newFixedThreadPool(3);
