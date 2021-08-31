@@ -1,10 +1,11 @@
-package pratice.two;
 
-import pojo.TreeNode;
-
+import pratice.two.pojo.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Ryan
+ */
 public class leetcode_94 {
     List<Integer> list;
     public List<Integer> inorderTraversal(TreeNode root) {
