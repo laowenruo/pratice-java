@@ -1,4 +1,3 @@
-package pratice.two;
 
 import pojo.TreeNode;
 
@@ -7,6 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * @author Ryan
+ */
 public class leetcode_102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> lists=new ArrayList<>();
