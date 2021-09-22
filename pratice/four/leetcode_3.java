@@ -14,4 +14,18 @@ public class leetcode_3 {
         }
         return max;
     }
+    public int lengthOfLongestSubstring1(String s){
+        char[] words=s.toCharArray();
+        HashMap<Character, Integer> map=new HashMap<>(words.length);
+        int maxLength=Integer.MIN_VALUE;
+        for (int start=0,end = 0; end < words.length; end++) {
+            if (map.containsKey(words[end])){
+                start=Math.max(start,map.get(words[end]));
+            }
+            maxLength=Math.max(maxLength,end-start+1);
+            start=map.get(words[end]);
+            map.put(words[end],end+1);
+        }
+        return maxLength;
+    }
 }
