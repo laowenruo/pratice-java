@@ -10,4 +10,14 @@ public class leetcode_69 {
             a=(a+x/a)/2.0;
         }
     }
+    public int mySqrt(int x) {
+        if (x==1||x==0){
+            return x;
+        }
+        long a=x/2;
+        while (a*a>x){
+            a=(a+x/a)/2;
+        }
+        return (int) a;
+    }
 }

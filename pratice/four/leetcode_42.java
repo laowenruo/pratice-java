@@ -24,4 +24,23 @@ public class leetcode_42 {
         }
         return sum;
     }
+    public int trap1(int[] height) {
+        if (height==null){
+            return 0;
+        }
+        int sum=0;
+        Stack<Integer> stack=new Stack<>();
+        for (int i = 0; i < height.length; i++) {
+            while (!stack.isEmpty()&&height[stack.peek()]<height[i]){
+                int index=stack.pop();
+                if (stack.isEmpty()){
+                    break;
+                }
+                int current_width=i-stack.peek()-1;
+                sum=sum+(Math.min(height[stack.peek()],height[i])-height[index])*current_width;
+            }
+            stack.push(i);
+        }
+        return sum;
+    }
 }
